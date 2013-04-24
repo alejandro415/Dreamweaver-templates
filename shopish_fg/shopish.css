@@ -1,0 +1,484 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, label, legend, p, blockquote, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+:focus {
+	outline: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+fieldset, img {
+	border: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+abbr, acronym {
+	border: 0;
+}
+body {
+	background: #FFF;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: droid-sans;
+	font-style: normal;
+	font-weight: 400;
+}
+header {
+	background: #f6f4e5;
+	min-height: 100px;
+	padding-top: 30px;
+}
+#logo {
+	width: 73.6842%;
+	background: url(images/logo.jpg) no-repeat;
+	display: block;
+	text-indent: -990px;
+	height: 75px;
+	margin-left: 15%;
+}
+header input, header a.search {
+	float: right;
+}
+header form {
+	padding-top: 10px
+}
+header input {
+	width: 200px;
+}
+nav.container {
+	background: #bd4932;
+	min-height: 55px;
+	line-height: 55px;
+}
+nav.container a {
+	display: block;
+	width: 100%;
+	padding-left: 10px;
+	color: #f2c5bc;
+}
+nav.container a:hover {
+	color: #FFF;
+}
+#content {
+	width: 100%;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	/* apply a natural box layout model Please read http://paulirish.com/2012/box-sizing-border-box-ftw/ for more information*/
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+	-webkit-box-sizing: border-box; /* Safari */
+}
+/* Gallery */
+#featured {
+	margin-bottom: 16px;
+	margin-top: 45px;
+	padding-top: 17px;
+	padding-right: 17px;
+	padding-bottom: 17px;
+	padding-left: 17px;
+	/* apply a natural box layout model Please read http://paulirish.com/2012/box-sizing-border-box-ftw/ for more information*/
+
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+	-webkit-box-sizing: border-box; /* Safari */
+}
+#gallery li {
+	float: left;
+	margin-top: 6px;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	margin-left: 6px;
+}
+#gallery li.last {
+	margin-right: 0;
+}
+/* Info */
+ul.bullets {
+	float: left;
+	margin-top: -3px;
+	margin-right: 39px;
+	margin-bottom: 12px;
+	margin-left: 43px;
+}
+ul.bullets li {
+	list-style-type: disc;
+	color: #bd4932;
+	margin-bottom: 15px;
+	list-style-position: inside;
+}
+ul.bullets li span {
+	color: #888;
+}
+#info p {
+	margin-bottom: 30px;
+}
+/* Footer*/
+footer {
+	background: #f6f4e5;
+	padding: 50px 0;
+	height: 100%;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+footer nav {
+	float: right;
+}
+footer a {
+	color: #ff6f28;
+}
+footer nav a {
+	float: right;
+	margin-right: 20px;
+}
+/* ----- Typography ----- */	
+
+p {
+	font-family: droid-sans;
+	color: #888888;
+	font-size: 14px;
+	line-height: 22px;
+	font-style: normal;
+	font-weight: 400;
+}
+a {
+	color: #ff6f28;
+	text-decoration: none;
+	font-family: droid-sans;
+	font-style: normal;
+	font-weight: 400;
+}
+a:hover {
+	color: #d34600
+}
+h1 {
+	font-size: 42px;
+	line-height: 42px;
+}
+h2 {
+	font-size: 42px;
+	line-height: 42px;
+	color: #333;
+	margin-bottom: 30px;
+	font-style: normal;
+	font-weight: 400;
+	font-family: aguafina-script;
+}
+/* ----- Buttons ----- */
+a.btn {
+	background: #333;
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: -6px;
+	padding-bottom: 14px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 13px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+a.btn.search {
+	background: #db9e36
+}
+a.btn.cta {
+	background: #db9e36;
+	font-size: 24px;
+	padding: 16px 32px;
+	margin-left: 40px;
+	border-top-left-radius: 11px;
+	border-top-right-radius: 11px;
+	border-bottom-right-radius: 11px;
+	border-bottom-left-radius: 11px;
+}
+a:hover.btn {
+	background: #f4be63;
+}
+/* ----- Form ----- */
+input {
+	border: 1px solid #dddddd;
+	background: #FFF;
+	font-size: 16px;
+	padding: 12px;
+	border-top-left-radius: 18px;
+	border-bottom-left-radius: 18px;
+}
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width: 100%;
+}
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+.fluidList {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+		/*Commenting out default Fluid Grid Behavior for design to stretch end to end in the viewport*/
+	/*padding-left: 2.5%;
+	padding-right: 2.5%;*/
+	clear: none;
+	float: none;
+}
+#header {
+}
+#searchform {
+	width: 87%;
+	clear: both;
+	margin-left: 0;
+	margin-bottom: 6px;
+}
+.container {
+	width: 100%;
+}
+#gallery {
+	width: 100%;
+	margin-left: 0;
+	padding-top: 0px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+	-webkit-box-sizing: border-box; /* Safari */
+}
+.previews {
+	width: 100%;
+	margin-left: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+	-webkit-box-sizing: border-box; /* Safari */
+	padding-top: 26px;
+	padding-right: 26px;
+	padding-bottom: 26px;
+	padding-left: 26px;
+}
+#info {
+	width: 100%;
+	clear: both;
+	margin-left: 0;
+	margin-bottom: 24px;
+	margin-top: 45px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+	-webkit-box-sizing: border-box; /* Safari */
+}
+.sixcol {
+	width: 100%;
+	margin-left: 0;
+}
+#header #logo p {
+	text-indent: -6px;
+	margin-top: 4px;
+	margin-left: 10px;
+}
+.sixcolumn {
+	width: 100%;
+	margin-left: 0;
+}
+.zeroMargin_mobile {
+	margin-left: 0;
+}
+.hide_mobile {
+	display: none;
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 100%;
+		/*Commenting out default Fluid Grid Behavior for design to stretch end to end in the viewport*/
+	/*
+	padding-left: 1.25%;
+	padding-right: 1.25%;*/
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#header {
+}
+#logo {
+	width: 61.5384%;
+	padding-left: 0px;
+	margin-left: 25.641%;
+}
+#searchform {
+	width: 61.5384%;
+	clear: both;
+	margin-left: 12.8205%;
+}
+nav.container a {
+	color: #f2c5bc;
+	text-transform: uppercase;
+	margin-left: 20px;
+	font-size: 14px;
+	display: inline;
+}
+.container {
+	width: 100%;
+}
+#content {
+	width: 48.7179%;
+}
+#gallery {
+	width: 100%;
+	margin-left: 0;
+}
+.previews {
+	width: 100%;
+	margin-left: 0;
+}
+#info {
+	width: 48.7179%;
+	clear: none;
+	margin-left: 2.5641%;
+}
+.sixcol {
+	width: 100%;
+	margin-left: 0;
+}
+.sixcolumn {
+	width: 100%;
+	margin-left: 0;
+}
+.hide_tablet {
+	display: none;
+}
+.zeroMargin_tablet {
+	margin-left: 0;
+}
+}
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 100%;
+	/*Commenting out default Fluid Grid Behavior for design to stretch end to end in the viewport*/
+	/*max-width: 1232px;
+	padding-left: 0.8333%;
+	padding-right: 0.8333%;*/
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#header {
+}
+#logo {
+	width: 32.2033%;
+	margin-left: 24px;
+}
+#searchform {
+	width: 49.1525%;
+	margin-left: 10.1694%;
+	clear: none;
+}
+.container {
+	width: 100%;
+}
+#content {
+	width: 49.1525%;
+}
+#gallery {
+	width: 100%;
+	margin-left: 0;
+}
+.previews {
+	width: 100%;
+	margin-left: 0;
+}
+#info {
+	width: 49.1525%;
+	margin-left: 1.6949%;
+	clear: none;
+}
+.sixcol {
+	width: 65.5172%;
+	margin-left: 0;
+}
+.sixcolumn {
+	width: 65.5172%;
+	margin-left: 0;
+}
+.zeroMargin_desktop {
+	margin-left: 0;
+}
+.hide_desktop {
+	display: none;
+}
+}
