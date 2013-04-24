@@ -90,8 +90,6 @@ header p {
 	position: relative;
 	z-index: 100;
 	padding-bottom: 0;
-	/* [disabled]padding-left: 10px;
-*/
 	padding-right: 10px;
 	padding-top: 0;
 }
