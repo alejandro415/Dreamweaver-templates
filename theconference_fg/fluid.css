@@ -1,0 +1,462 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	/* [disabled]padding-left: 2.5%; */
+	/* [disabled]padding-right: 2.5%; */
+	clear: none;
+	float: none;
+}
+
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	body {
+	font-size: 62.5%;
+	font-family: lato;
+	color: #555;
+	line-height: 18px;
+	font-style: normal;
+	font-weight: 700;
+	}
+	
+		header {
+			min-height:100px;
+			padding-top:40px;
+		}
+		
+			#logo {
+	height: 33px;
+	width: 404px;
+	margin: 0 auto 20px auto;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 7em;
+	text-decoration: none;
+	color: #FF740D;
+	font-family: bebas-neue;
+			}
+		
+		/* ----- Navigation ----- */
+		nav {
+			text-align:center;
+			padding-left:35px;
+		}
+			nav a {
+	margin-right: 30px;
+	text-transform: uppercase;
+	color: #333;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+			}
+			nav a:hover {
+				color:#888;
+			}
+	
+	/* ----- Typography ----- */	
+	
+	p {
+	font-family: lato;
+	font-size: 20px;
+	color: #888;
+	line-height: 28px;
+	font-style: normal;
+	font-weight: 300;
+	}
+	
+	a {
+		color:#ff6f28;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		color:#d34600
+	}
+	
+	h2 {
+	font-family: lato;
+	font-size: 40px;
+	line-height: 40px;
+	color: #555;
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	}
+	
+	h3 {
+		text-algin:center;
+	}
+
+	
+	/* ----- Content ----- */
+	#content {
+		background:#FFF;
+		padding-top:100px;
+	}
+	
+		#content .container {
+			padding-top:55px;
+			padding-bottom:55px;
+		}
+		
+			#content .container h2 {
+				margin-bottom:25px;
+			}
+	
+		/* Featured */
+		#featured {
+			background:#4a4a4a;
+			text-align:center;
+			padding:75px 0;
+			position:relative;
+		}
+			
+			#featured h2 {
+	color: #FFF;
+	font-family: lato;
+	margin-bottom: 40px;
+	font-style: normal;
+	font-weight: 700;
+			}
+			
+			#featured p {
+	color: #d4d4d4;
+	font-size: 20px;
+	line-height: 28px;
+	max-width: 500px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+			}
+			
+			#featured .cta {
+	display: inline-block;
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	margin-left: -130px;
+			}
+		
+		/* Highlighted */
+		div.highlight {
+			background:#fbfbfb;
+			border:1px solid #f9f9f9;
+			text-align:center;
+		}
+	
+	/* Gallery */
+	.gallery img {
+		margin-bottom:10px;
+	}
+	
+	.gallery h3 {
+	font-size: 16px;
+	color: #555;
+	text-align: left;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	}
+	
+	.gallery p {
+	text-align: left;
+	font-size: 14px;
+	line-height: 18px;
+	padding-left: 20px;
+	width: 90%;
+	}
+	
+	.gallery li {
+		text-align:center;
+	}
+	
+	.gallery.articles li {
+		text-align:left;
+		margin-bottom:30px;
+	}
+		
+	
+	/* ----- Footer ----- */
+	
+	.footr_wrap {
+		background:#4a4a4a;
+		text-align:center;
+		border-top:1px solid #DDD;
+		padding:30px 0;
+	}
+		.footr nav {
+			padding:0;
+		}
+		.footr p {
+			text-align:center;
+			padding:0;
+			color:#FFF;
+			font-size:15px;
+			text-transform: uppercase;
+			margin-bottom:15px;
+		}
+		
+		.footr a {
+			color:#ff974b;
+		}
+		
+				
+	/* ----- Buttons ----- */
+	a.btn.cta {
+	color: #FFF;
+	background: #ff740e;
+	text-transform: uppercase;
+	font-size: 26px;
+	text-decoration: none;
+	font-family: bebas-neue;
+	line-height: 26px;
+	border-radius: 40px;
+	-moz-border-radius: 40px;
+	max-width: 300px;
+	max-height: 50px;
+	font-style: normal;
+	font-weight: 400;
+	padding-bottom: 20px;
+	padding-left: 65px;
+	padding-right: 65px;
+	padding-top: 20px;
+	}
+		a:hover.btn.cta {
+			background:#ff903f;
+		}
+			
+	/* Clearfix */
+	.clear:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+
+#div1 {
+}
+.headr {
+}
+#featured {
+}
+.twelvecols {
+}
+#content {
+}
+.containr {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.gallery {
+}
+.threecol {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.twelvecol {
+}
+.twocols {
+width: 47.3684%;
+clear: none;
+margin-left: 5.2631%;
+}
+.threecols {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.footr_wrap {
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 100%;
+	/* [disabled]padding-left: 1.25%; */
+	/* [disabled]padding-right: 1.25%; */
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.headr {
+}
+#featured {
+}
+.twelvecols {
+}
+#content {
+}
+.containr {
+}
+.gallery {
+}
+.threecol {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.twelvecol {
+}
+.twocols {
+width: 35.8974%;
+clear: none;
+margin-left: 15.3846%;
+}
+.threecols {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.footr_wrap {
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+.headr a {
+}
+.headr a:link {
+	color: #333;
+}
+.headr a:visited {
+	color: #333;
+}
+.sponsors {
+	padding-bottom: 60px;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 100%;
+	/* [disabled]max-width: 1232px; */
+	/* [disabled]padding-left: 0.8333%; */
+	/* [disabled]padding-right: 0.8333%; */
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.headr {
+}
+#featured {
+}
+.twelvecols {
+}
+#content {
+}
+.containr {
+}
+.gallery {
+}
+.threecol {
+width: 23.7288%;
+margin-left: 1.6949%;
+clear: none;
+}
+.twelvecol {
+}
+.twocols {
+width: 15.2542%;
+margin-left: 1.6949%;
+clear: none;
+}
+.threecols {
+width: 23.7288%;
+margin-left: 1.6949%;
+clear: none;
+}
+.footr_wrap {
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}
+#logo span {
+	color: #4A4A4A;
+}
+.footr p {
+	text-transform: uppercase;
+	font-size: 15px;
+	text-align: center;
+}
+.twelvecol p {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.articles img {
+	padding-left: 20px;
+	width: 90%;
+}

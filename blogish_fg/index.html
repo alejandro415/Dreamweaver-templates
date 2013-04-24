@@ -1,0 +1,100 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blogish</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="fluid.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/bebas-neue:n4:default;lato:n1,n4,n3:default;cabin:n4:default.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div class="gridContainer clearfix">
+	<header class="fluid containr headr">
+    	<div class="fluid logo">
+			<a href="#"><h1 id="logo">Blog<span>ish</span></h1></a>
+			<p>Your slogan here</p>
+       </div>
+    </header>
+    
+    <nav class="fluid containr">
+      <div class="fluid nav_items">
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Archives</a>
+        <a href="#">Contact</a>
+      </div>
+        
+		<div class="fluid form last zeroMargin_desktop">
+			<form>
+              <input type="text" placeholder="Enter text here">
+              <a href="#" class="btn search">Search</a>
+           </form>
+        </div>
+    </nav>
+    
+    <section id="content" class="fluid containr">
+    	<section id="blog" class="fluid blogr">
+       		<article class="fluid blog_entry">
+				<header>
+					<h2>Blog title goes here</h2>
+					<img src="images/blog-img.png" alt="Blog Image">
+				</header>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius, neque at gravida eleifend, erat velit euismod leo, eu mollis lectus velit in odio. Donec in fringilla tortor. Nunc cursus lectus nulla. Vestibulum ante ipsum primis in faucibus orcmmmi luctus et ultrices posuere cubilia Curae; Vivamus dignissim tempus pretium. Fusce consectetur justo at tellus vulputate ut elementum sapien commodo.</p>
+				
+				<a href="#" class="btn">Read More</a>
+           </article>
+       		<article class="fluid blog_entry">
+       		  <header>
+       		    <h2>Blog title goes here</h2>
+       		    <img src="images/blog-img.png" alt="Blog Image">
+             </header>
+       		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius, neque at gravida eleifend, erat velit euismod leo, eu mollis lectus velit in odio. Donec in fringilla tortor. Nunc cursus lectus nulla. Vestibulum ante ipsum primis in faucibus orcmmmi luctus et ultrices posuere cubilia Curae; Vivamus dignissim tempus pretium. Fusce consectetur justo at tellus vulputate ut elementum sapien commodo.</p>
+       		  <a href="#" class="btn">Read More</a>
+          	</article>              
+           
+       </section>
+       
+       <section id="sidebar" class="fluid sidebr last">
+        <img src="images/sidebar-img.png" alt="Advertisement">
+       </section>
+       
+    </section>
+    
+    <footer class="fluid containr">
+		<p class="fluid copyr">Copyright 2013 <a href="#">Adobe</a></p>
+        <nav class="fluid navr last zeroMargin_tablet zeroMargin_desktop">
+        <a href="#">Contact</a>
+        <a href="#">About Us</a>
+        <a href="#">Categories</a>
+        <a href="#">Home</a>
+       </nav>
+    </footer>
+    
+</div>
+</body>
+</html>
