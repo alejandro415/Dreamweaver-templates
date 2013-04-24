@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/*Page Styles*/
+html, body, div, span, applet, object, iframe, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, label, legend, p, blockquote, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 100%;
+	font-family: droid-sans;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+:focus {
+	outline: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+fieldset, img {
+	border: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+abbr, acronym {
+	border: 0;
+}
+body {
+	background: #FFF;
+	font-size: 16px;
+	line-height: 18px;
+}
+/* ----- Typography ----- */	
+
+p {
+	font-family: droid-sans;
+	color: #888888;
+	font-size: 16px;
+	line-height: 22px;
+	font-style: normal;
+	font-weight: 400;
+}
+a {
+	color: #ff6f28;
+	text-decoration: none;
+}
+a:hover {
+	color: #d34600
+}
+h1 {
+	font-size: 42px;
+	line-height: 42px;
+	font-family: alfa-slab-one;
+}
+h2 {
+	font-size: 45px;
+	line-height: 55px;
+	color: #a95381;
+	margin-bottom: 30px;
+	font-family: droid-sans;
+	font-weight: 700;
+	font-style: normal;
+}
+h3 {
+	color: #ab93a0;
+	font-size: 20px;
+	font-family: droid-sans;
+	font-weight: 700;
+	margin-bottom: 20px;
+	font-style: normal;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+h4 {
+	color: #555;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+blockquote {
+}
+blockquote p {
+	color: #888888;
+	margin-bottom: 30px
+}
+blockquote footer {
+	background: #FFF;
+	text-align: left;
+	padding: 0;
+}
+blockquote img, blockquote span {
+	float: left
+}
+blockquote span {
+	margin-top: 20px;
+	margin-left: 5px;
+	color: #888;
+}
+/* ----- Header ----- */
+
+header {
+	background: #a95381;
+	min-height: 80px;
+	padding-top: 30px;
+}
+.logo {
+	height: 36px;
+	font-style: normal;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+nav {
+	min-height: 55px;
+	line-height: 55px;
+	text-align: right;
+}
+nav a {
+	color: #f7c4df;
+	text-transform: uppercase;
+	margin-right: 20px;
+	font-size: 12px;
+	font-family: droid-sans;
+	font-weight: 400;
+	font-style: normal;
+}
+nav a.selected, nav a:hover {
+	color: #FFF;
+}
+/* ----- Content ----- */
+
+.featuredstyle {
+	background: #fffbf8;
+	text-align: center;
+	padding: 70px 0;
+	border-bottom: 1px solid #f9ede4;
+}
+#featured p {
+	font-size: 20px;
+	max-width: 500px;
+	margin: 0 auto;
+	color: #ab93a0;
+	line-height: 24px;
+	margin-bottom: 45px;
+}
+#content {
+	padding-top: 11px;
+	margin-bottom: 50px;
+	padding-right: 11px;
+	padding-bottom: 11px;
+	padding-left: 11px;
+}
+/* ----- Footer ----- */
+footer {
+	background: #a95381;
+	padding: 50px 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: center;
+}
+footer p {
+	color: #cf7faa;
+}
+footer nav {
+	text-align: center;
+}
+footer a {
+	color: #f7c4df;
+}
+footer a:hover {
+	color: #FFF;
+}
+footer nav a {
+	margin-right: 20px;
+}
+/* ----- Buttons ----- */
+a.btn {
+	background: #a95381;
+	padding: 16px 20px;
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	-webkit-box-shadow: inset 0 -3px 0px #90315f;
+	-moz-box-shadow: inset 0 -3px 0px #90315f;
+	font-size: 22px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}
+a:hover.btn {
+	background: #ba6894
+}
+a:active.btn {
+	-webkit-box-shadow: inset 0 -0 0px #90315f;
+	-moz-box-shadow: inset 0 -0 0px #90315f;
+	position: relative;
+	top: 2px;
+}
+
+
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width: 100%;
+}
+
+/*Fluid Grid Classes*/
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+.fluidList {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	clear: none;
+	float: none;
+}
+#header {
+	width: 100%;
+}
+#logo {
+	width: 73.6842%;
+	margin-left: 9px;
+}
+.topnav {
+	display: block;
+	width: 100%;
+	margin-left: 0;
+	clear: both;
+}
+#featured {
+}
+#main {
+}
+#content {
+}
+.articles {
+	width: 100%;
+	clear: both;
+	margin-left: 0;
+	margin-top: 23px;
+}
+#footer {
+}
+.adobecopyright {
+}
+.footerlinks {
+}
+.zeroMargin_mobile {
+	margin-left: 0;
+}
+.hide_mobile {
+	display: none;
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 100%;
+	/*padding-left: 1.25%;
+	padding-right: 1.25%;*/
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#header {
+	width: 100%;
+}
+#logo {
+	width: 23.0769%;
+	margin-left: 9px;
+}
+.topnav {
+	display: block;
+	width: 61.5384%;
+	margin-left: 15.3846%;
+	clear: none;
+}
+#featured {
+}
+#main {
+}
+#content {
+}
+.articles {
+	width: 48.7179%;
+	clear: none;
+	margin-left: 2.5641%;
+	margin-top: 26px;
+}
+#footer {
+}
+.adobecopyright {
+}
+.footerlinks {
+}
+.hide_tablet {
+	display: none;
+}
+.zeroMargin_tablet {
+	margin-left: 0;
+}
+}
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 100%;
+	/*max-width: 1232px;
+	padding-left: 0.8333%;
+	padding-right: 0.8333%;*/
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#header {
+	width: 100%;
+}
+#logo {
+	width: 15.2542%;
+	margin-left: 9px;
+}
+.topnav {
+	width: 49.1525%;
+	margin-left: 27.1186%;
+	clear: none;
+}
+#featured {
+}
+#main {
+}
+#content {
+}
+.articles {
+	width: 32.2033%;
+	margin-left: 1.6949%;
+	clear: none;
+}
+#footer {
+}
+.adobecopyright {
+}
+.footerlinks {
+}
+.zeroMargin_desktop {
+	margin-left: 0;
+}
+.hide_desktop {
+	display: none;
+}
+}

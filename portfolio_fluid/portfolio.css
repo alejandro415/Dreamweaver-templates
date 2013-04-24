@@ -1,0 +1,461 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, label, legend, p, blockquote, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+	font-style: normal;
+	font-weight: 400;
+	font-family: droid-sans;
+}
+:focus {
+	outline: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+fieldset, img {
+	border: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+abbr, acronym {
+	border: 0;
+}
+body {
+	font-size: 62.5%;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	color: #555;
+	line-height: 18px;
+	font-style: normal;
+	font-weight: 400;
+}
+header {
+	height: 185px;
+	text-align: center;
+	background: #FFF;
+}
+header p {
+	color: #DDD;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-family: Arial, helvetica, sans-serif;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+#logo {
+	padding-top: 60px;
+	margin-bottom: 15px
+}
+/* ----- Navigation ----- */
+		
+.navwrap {
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	background: #FFF;
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	z-index: 100;
+	padding-bottom: 0;
+	/* [disabled]padding-left: 10px;
+*/
+	padding-right: 10px;
+	padding-top: 0;
+}
+nav {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+nav li {
+	font-family: droid-sans;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	float: left;
+	border-right: 1px solid #EEE;
+	letter-spacing: 1px;
+	font-style: normal;
+}
+nav li a {
+	color: #AAA;
+	text-decoration: none;
+	padding: 0 35px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	display: inline-block;
+}
+nav li a:hover {
+	color: #333;
+}
+nav li a.selected {
+	color: #333;
+}
+.gallery li {
+	margin-bottom: 40px;
+	text-align: center;
+}
+#content {
+	margin-top: 40px;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0%, rgba(255,255,255,1.00)), color-stop( 100%, rgba(255,255,255,1.00)));
+	background-image: -webkit-linear-gradient(270deg, rgba(255,255,255,1.00) 0%, rgba(255,255,255,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg, rgba(255,255,255,1.00) 0%, rgba(255,255,255,1.00) 100%);
+	background-image: -o-linear-gradient(270deg, rgba(255,255,255,1.00) 0%, rgba(255,255,255,1.00) 100%);
+	background-image: linear-gradient(180deg, rgba(255,255,255,1.00) 0%, rgba(255,255,255,1.00) 100%);
+}
+/* Featured */
+#featured {
+	background: #ff6f28;
+	text-align: center;
+	padding: 75px 0;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+#featured h1 {
+	margin-bottom: 30px;
+	font-style: normal;
+	font-weight: 400;
+	font-family: alfa-slab-one;
+}
+#featured h2 {
+	color: #ffd7c3;
+	font-size: 26px;
+	font-family: 'Cabin', Arial, serif;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+#featured .cta {
+	display: inline-block;
+}
+/* ----- Footer ----- */
+	
+.footer-wrap {
+	border-top: 1px solid #DDD;
+}
+.footer {
+	padding-bottom: 30px;
+	padding-right: 6px;
+	padding-top: 7px;
+}
+.footer .nav {
+	float: right;
+}
+.footer .nav li {
+	float: left;
+	margin-right: 20px;
+}
+.footer .nav li a, .footer p {
+	font-size: 1.4em;
+	text-transform: uppercase;
+	margin-left: 26px;
+}
+/* ----- Typography ----- */	
+	
+a {
+	color: #ff6f28;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	text-decoration: none;
+}
+a:hover {
+	color: #d34600
+}
+h1 {
+	font-size: 5em;
+	color: #FFF;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: 'CubanoRegular', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 70px;
+}
+h2 {
+	font-size: 4.0em;
+	color: #333;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.4em;
+}
+h3 {
+	text-algin: center;
+}
+blockquote {
+	font-family: droid-sans;
+	text-transform: normal;
+	font-style: normal;
+	font-size: 1.5em;
+	line-height: 1.4em;
+	color: #888;
+	font-weight: 400;
+}
+blockquote p {
+	margin-top: 32px;
+}
+cite {
+	font-family: 'Cabin', arial, sans-serif;
+	color: #ff6f28;
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	text-transform: uppercase
+}
+/* ----- Buttons ----- */
+a.btn.cta {
+	padding: 20px 50px;
+	color: #FFF;
+	background: #3a3a3a;
+	text-transform: uppercase;
+	font-size: 3.0em;
+	text-decoration: none;
+	font-family: Cabin, arial, sans-serif;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	line-height: 30px;
+}
+a:hover.btn.cta {
+	background: #111;
+}
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+	padding-right: 11px;
+	padding-top: 11px;
+	padding-bottom: 7px;
+	padding-left: 11px;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width: 100%;
+}
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	width: 100%;
+	float: left;
+	display: block;
+}
+.fluidList {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	/*Commenting out default Fluid Grid Behavior for design to stretch end to end in the viewport*/
+/*	padding-left: 2.5%;
+	padding-right: 2.5%;*/
+	clear: none;
+	float: none;
+}
+#header {
+}
+.select-menu {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	padding: 20px;
+	margin-top: 10px;
+}
+.navwrap nav {
+	display: none;
+}
+#featured {
+	background-color: #ff6f28;
+}
+.catchyheading {
+}
+.shortsentence {
+}
+#gallery {
+}
+.fourcol {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+	-webkit-box-sizing: border-box;
+}
+.quote {
+	padding-top: 0px;
+	padding-bottom: 17px;
+	padding-left: 6px;
+	font-size: 13px;
+}
+.footerwrap {
+	width: 100%;
+}
+.zeroMargin_mobile {
+	margin-left: 0;
+}
+.hide_mobile {
+	display: none;
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 100%;
+	/*Commenting out default Fluid Grid Behavior for design to stretch end to end in the viewport*/
+/*	padding-left: 1.25%;
+	padding-right: 1.25%;*/
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#header {
+}
+.navwrap nav {
+	display: none;
+}
+nav li a {
+	padding: 0 15px;
+	font-size: 13px;
+}
+.select-menu {
+	display: block;
+}
+#featured {
+}
+.catchyheading {
+}
+.shortsentence {
+}
+#content {
+	padding-top: 13px;
+	padding-right: 13px;
+	padding-bottom: 13px;
+	/* [disabled]padding-left: 13px;
+*/
+}
+#gallery {
+}
+.fourcol {
+	width: 48.7179%;
+	clear: none;
+	margin-left: 2.5641%;
+}
+.quote {
+}
+.footerwrap {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 100%;
+}
+.hide_tablet {
+	display: none;
+}
+.zeroMargin_tablet {
+	margin-left: 0;
+}
+}
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 100%;
+	/*Commenting out default Fluid Grid Behavior for design to stretch end to end in the viewport*/
+	/*max-width: 1232px;
+	padding-left: 0.8333%;
+	padding-right: 0.8333%;*/
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#header {
+}
+.navwrap nav {
+	display: block;
+}
+.select-menu {
+	display: none;
+}
+#featured {
+}
+.catchyheading {
+}
+.shortsentence {
+}
+#content {
+}
+#gallery {
+}
+.fourcol {
+	width: 32.2033%;
+	margin-left: 1.6949%;
+	clear: none;
+}
+.quote {
+	margin-top: 13px;
+	margin-right: 13px;
+	margin-bottom: 13px;
+	margin-left: 13px;
+}
+.footerwrap {
+	width: 100%;
+}
+.zeroMargin_desktop {
+	margin-left: 0;
+}
+.hide_desktop {
+	display: none;
+}
+}
