@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	/* [disabled]padding-left: 2.275%; */
+	/* [disabled]padding-right: 2.275%; */
+	clear: none;
+	float: none;
+}
+#div1 {
+}
+.headr {
+	background-color: #a95381;
+}
+.logo {
+width: 100%;
+}
+.last {
+}
+.navr {
+	width: 100%;
+	clear: both;
+	margin-left: 0;
+	padding-top: 30px;
+	text-align: right;
+}
+.containr {
+}
+.title {
+	background-color: #fffbf8;
+	border-bottom: 1px solid #f9ede4;
+}
+.cat_title {
+	font-style: normal;
+	font-weight: 900;
+	font-family: lato;
+	color: #ab93a0;
+}
+.list {
+}
+.menu_item {
+	width: 100%;
+	clear: both;
+	margin-left: 0;
+}
+.desc {
+	width: 100%;
+	margin-left: 0;
+	padding-left: 20px;
+	font-style: normal;
+}
+.container {
+}
+.footr_title {
+	text-align: center;
+	color: #cf7faa;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 300;
+	font-family: lato;
+}
+.footr_nav {
+	text-align: center;
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 100%;
+	/* [disabled]padding-left: 1.1625%; */
+	/* [disabled]padding-right: 1.1625%; */
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.headr {
+}
+.logo {
+width: 100%;
+}
+.last {
+}
+.navr {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.containr {
+}
+.title {
+}
+.cat_title {
+}
+.list {
+}
+.menu_item {
+	width: 48.7179%;
+	clear: none;
+}
+.desc {
+width: 73.6842%;
+margin-left: 0;
+}
+.container {
+}
+.footr_title {
+}
+.footr_nav {
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 100%;
+	/* [disabled]max-width: 1232px; */
+	/* [disabled]padding-left: 0.75%; */
+	/* [disabled]padding-right: 0.75%; */
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.headr {
+}
+.logo {
+width: 49.1525%;
+}
+.last {
+}
+.navr {
+	width: 49.1525%;
+	margin-left: 1.6949%;
+	clear: none;
+}
+.containr {
+}
+.title {
+}
+.cat_title {
+}
+.list {
+}
+.menu_item {
+	width: 32.2033%;
+	clear: none;
+}
+.desc {
+width: 73.6842%;
+margin-left: 0;
+}
+.container {
+}
+.footr_title {
+}
+.footr_nav {
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}
+.navr a {
+	padding-right: 20px;
+	font-style: normal;
+	font-weight: 400;
+	font-family: arvo;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-decoration: none;
+	color: #f7c4df;
+}
+#logo {
+	color: white;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+	padding-left: 20px;
+	font-family: chunk;
+}
+.logo a {
+	text-decoration: none;
+}
+.navr a:hover {
+	color: white;
+}
+.title h2 {
+	text-align: center;
+	font-style: normal;
+	font-weight: 200;
+	color: #a95381;
+	font-size: 40px;
+	font-family: chunk;
+}
+.cat_title span {
+	padding-left: 20px;
+}
+.menu_item img {
+	padding-left: 20px;
+}
+.desc h4 {
+	font-style: normal;
+	font-weight: 900;
+	font-family: lato;
+	color: #555;
+	margin-bottom: -10px;
+	margin-left: 5px;
+}
+.desc p {
+	font-style: normal;
+	font-weight: 300;
+	font-family: lato;
+	color: #888;
+	line-height: 1.2em;
+	margin-bottom: 30px;
+	margin-left: 5px;
+}
+footer.containr {
+	background-color: #a95381;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 30px;
+}
+.footr_title a {
+	color: #f7c4df;
+	text-decoration: none;
+	font-weight: 300;
+}
+.footr_nav a {
+	font-style: normal;
+	font-weight: 400;
+	font-family: arvo;
+	color: #f7c4df;
+	text-decoration: none;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.footr_nav a:hover {
+	color: white;
+}
+.footr_title a:hover {
+	color: white;
+}
