@@ -127,11 +127,11 @@ nav li a.selected {
 }
 #content {
 	margin-top: 40px;
-	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0%, rgba(255,255,255,1.00)), color-stop( 100%, rgba(255,255,255,1.00)));
-	background-image: -webkit-linear-gradient(270deg, rgba(255,255,255,1.00) 0%, rgba(255,255,255,1.00) 100%);
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(255,203,163,1.00)),color-stop( 100% , rgba(255,255,255,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(255,203,163,1.00) 0%,rgba(255,255,255,1.00) 100%);
 	background-image: -moz-linear-gradient(270deg, rgba(255,255,255,1.00) 0%, rgba(255,255,255,1.00) 100%);
 	background-image: -o-linear-gradient(270deg, rgba(255,255,255,1.00) 0%, rgba(255,255,255,1.00) 100%);
-	background-image: linear-gradient(180deg, rgba(255,255,255,1.00) 0%, rgba(255,255,255,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,203,163,1.00) 0%,rgba(255,255,255,1.00) 100%);
 }
 /* Featured */
 #featured {
